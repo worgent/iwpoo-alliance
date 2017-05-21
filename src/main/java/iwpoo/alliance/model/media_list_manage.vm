@@ -1,0 +1,35 @@
+//#set($layout="empty.vm")
+<!-- content -->
+<div class="x-contetn">
+            <div class="x-media_c margin clearfix">
+                <ul class="x-media_c_list margin-big-top clearfix container-1020">
+                    <li class="">
+                      #foreach($!Medias in $!mediaList)	
+                        <div class="x-media_list">
+                            <div class="margin-little clearfix">
+                                <a target="_blank" href="$homeModule.getTarget("/alliance_toMediaAdminEditorInfo.html")?mediaId=$!Medias.user.id" class="x-pic">
+                                    <img src="$!Medias.user.userFace" alt="">
+                                </a>
+                                <div class="x-info">
+                                    <h3 class="ellipsis">
+                                        <a target="_blank" href="$homeModule.getTarget("/alliance_toMediaAdminEditorInfo.html")?mediaId=$!Medias.user.id" class="x-name">$!Medias.user.name</a>
+                                    </h3>
+                                    #if(!$Medias.user.creed)
+                                     <p class="cr-6 margin-small-top margin-small-bottom">暂无简介....</p>
+                                   	#elseif($!Medias.user.creed.length() > 10)
+                                   	 <p class="cr-6 margin-small-top margin-small-bottom">$!Medias.user.creed.substring(0,10)....</p>
+									#else
+									 <p class="cr-6 margin-small-top margin-small-bottom">$!Medias.user.creed</p>
+									#end
+								
+                                </div>
+                            </div>
+                        </div>
+                      #end
+                    </li>
+                </ul> 
+            </div>
+
+</div><!-- /content -->
+<script>
+

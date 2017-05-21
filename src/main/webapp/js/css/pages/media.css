@@ -1,0 +1,32 @@
+@charset "utf-8";
+/*
+	Author: @¥Û¥–¥ÛÀ‚sir
+	Time: 2015-03-31
+*/
+	/* iPhone 3 4 5 */
+	@media screen and (min-width:320px) and (max-width: 374px){
+	
+	}
+	/* iPhone 6 */
+	@media screen and (min-width: 375px) and (max-width:413px){
+	
+	}
+	/* iPhone 6plus */
+	@media screen and (min-width: 414px) and (max-width:479px){
+	
+	}
+	
+	/*  Android and +  */
+	@media screen and (min-width:480px) and (max-width:639px){
+	
+	}
+
+	/*  Android and + */
+	@media screen and (min-width:640px) and (max-width:767px){
+	
+	}
+
+	/* ipad */
+	@media screen and (min-width:767px) and (max-width:1139px){
+	
+	}
